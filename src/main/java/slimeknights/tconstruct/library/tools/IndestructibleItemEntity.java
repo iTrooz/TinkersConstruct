@@ -20,6 +20,7 @@ public class IndestructibleItemEntity extends ItemEntity {
   public IndestructibleItemEntity(EntityType<? extends IndestructibleItemEntity> entityType, World world) {
     super(entityType, world);
     this.setNoDespawn();
+    this.lifespan = Integer.MAX_VALUE;
   }
 
   public IndestructibleItemEntity(World worldIn, double x, double y, double z, ItemStack stack) {
